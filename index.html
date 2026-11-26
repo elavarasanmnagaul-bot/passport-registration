@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1> PASSPORT APPLICATION</h1>
+        <p>Government Passport Registration Portal</p>
+    </header>
+
+    <form action="#" method="post">
+
+        <h2>Personal Information</h2>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label>First Name *</label>
+                <input type="text" placeholder="Enter first name"
+                       required pattern="[A-Za-z ]{2,}">
+            </div>
+
+            <div class="form-group">
+                <label>Last Name *</label>
+                <input type="text" placeholder="Enter last name"
+                       required pattern="[A-Za-z ]{2,}">
+            </div>
+
+            <div class="form-group">
+                <label>Date of Birth *</label>
+                <input type="date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender *</label>
+                <select required>
+                    <option value="">Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" placeholder="example@gmail.com"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Mobile Number *</label>
+                <input type="tel" placeholder="10-digit mobile number"
+                       pattern="[0-9]{10}" maxlength="10" required>
+            </div>
+
+        </div>
+
+        <h2>Address Details</h2>
+
+        <div class="form-grid">
+
+            <div class="form-group full">
+                <label>Residential Address *</label>
+                <textarea rows="3" placeholder="Enter your full address"
+                          required minlength="10"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>City *</label>
+                <input type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>State *</label>
+                <input type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>PIN Code *</label>
+                <input type="text" pattern="[0-9]{6}"
+                       maxlength="6" required>
+            </div>
+
+            <div class="form-group">
+                <label>Country *</label>
+                <input type="text" value="India" required>
+            </div>
+
+        </div>
+
+        <h2>Passport Details</h2>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label>Application Type *</label>
+                <select required>
+                    <option value="">Select Type</option>
+                    <option>Fresh Passport</option>
+                    <option>Re-issue of Passport</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Passport Booklet Type *</label>
+                <select required>
+                    <option value="">Select Type</option>
+                    <option>36 Pages</option>
+                    <option>60 Pages</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Place of Birth *</label>
+                <input type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Nationality *</label>
+                <input type="text" value="Indian" required>
+            </div>
+
+        </div>
+
+        <div class="declaration">
+            <input type="checkbox" id="declaration" required>
+            <label for="declaration">
+                I hereby declare that all the information provided
+                above is true and correct.
+            </label>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" class="submit-btn">
+                Submit Application
+            </button>
+
+            <button type="reset" class="reset-btn">
+                Reset Form
+            </button>
+        </div>
+
+        <p class="note">* All fields are mandatory.</p>
+
+    </form>
+
+    <footer>
+        <p>Passport Application Form | HTML5 & CSS3 Project</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
